@@ -75,11 +75,11 @@ btnScissors.addEventListener('click', () => {
 
 function checkWin (userScore, computerScore) {
     if (userScore===5) {
-        document.getElementById("message").innerHTML="User wins!"; //display message for the winner
+        setTimeout(() => {document.getElementById("message").innerHTML="Computer wins!";}, "1000"); //display message for the winner
         setTimeout(() => {location.reload();}, "2000");
     }
     else if (computerScore===5) {
-        document.getElementById("message").innerHTML="Computer wins!";
+        setTimeout(() => {document.getElementById("message").innerHTML="Computer wins!";}, "1000");
         setTimeout(() => {location.reload();}, "2000");
     } 
 }
