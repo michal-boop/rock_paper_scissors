@@ -76,15 +76,12 @@ btnScissors.addEventListener('click', () => {
 function checkWin (userScore, computerScore) {
     if (userScore===5) {
         document.getElementById("message").innerHTML="User wins!"; //display message for the winner
-        location.reload();
+        setTimeout(() => {location.reload();}, "2000");
     }
     else if (computerScore===5) {
         document.getElementById("message").innerHTML="Computer wins!";
-        location.reload();
+        setTimeout(() => {location.reload();}, "2000");
     } 
-    else {
-        document.getElementById("message").innerHTML="Next round!";
-    }
 }
 /*
 function game() {
