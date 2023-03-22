@@ -15,9 +15,19 @@
         <button id="paper"><img src="paper.png" alt="Paper"></button>
         <button id="scissors"><img src="scissors.png" alt="Scissors"></button>
     </div>
-    <div id="score_board">
-        <h4>Scoreboard:</h4>
-        <div id="score">
+    <div id="table">
+        <table border="none">
+            <caption>Scoreboard:</caption>
+            <tr>
+                <th>User</th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <td><span id="user_score"></span></td>
+                <td><span id="computer_score"></span></td>
+            </tr>
+        </table>
+        <div id="message">        
         </div>
     </div>
     <script src="myscripts.js"></script>
