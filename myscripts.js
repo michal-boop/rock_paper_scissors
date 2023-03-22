@@ -76,8 +76,8 @@ btnScissors.addEventListener('click', () => {
 function checkWin (userScore, computerScore) {
     if (userScore===5) {
         setTimeout(() => {document.getElementById("message").innerHTML="User wins!";}, "1000"); //display message for the winner
-        showImage();
-        setTimeout(() => {location.reload();}, "2000");
+        setTimeout(() => {showImage();}, "2000");
+        setTimeout(() => {location.reload();}, "3000");
     }
     else if (computerScore===5) {
         setTimeout(() => {document.getElementById("message").innerHTML="Computer wins!";}, "1000");
@@ -91,8 +91,10 @@ function showImage () {
     img.alt = "Trophy Cup";
     img.style.zIndex = "1";
     img.style.position = "fixed";
-    img.style.top = "15%";
-    img.style.left = "15%";
+    img.style.top = "50%";
+    img.style.marginTop = "-408px";
+    img.style.left = "50%";
+    img.style.marginLeft = "-343px";
     img.style.filter = "drop-shadow(0 0 100px white)";
     img.style.transition = "all 2s ease-in"
 
