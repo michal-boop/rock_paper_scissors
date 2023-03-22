@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to right, rgb(247, 127, 147),rgb(255, 240, 110),rgb(132, 181, 255));
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px whitesmoke;
+    text-align: center;
+}
+
+h4 {
+    font-size: 40px;
+    text-shadow: 2px 2px grey;
+    text-align: center;
+}
+
+#heading_back, #score_board{
+    background-color: rgba(241, 220, 188, 0.5);
+    display: inline-block;
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 8px 10px 5px grey;
+}

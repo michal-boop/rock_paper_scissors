@@ -36,7 +36,7 @@ function playRound (userChoice, computerChoice) {
     }
 }
 function game() {
-    while (userScore<5 && computerScore<5) { //create a loop which will keep playing the game until user or computer scores 5 points
+    /*while (userScore<5 && computerScore<5)*/ { //create a loop which will keep playing the game until user or computer scores 5 points
         userChoice = prompt("Choose your weapon: Rock, Paper or Scissors?", "").toLowerCase();//assign new value to variable holding user's choice of weapon, make it case insensitive
         if (((userChoice!=="rock")&&(userChoice!=="paper")&&(userChoice!=="scissors"))||userChoice===null) {//create a contingency in case of a typo or choice of null allowing another choice without making the loop run needlessly
             alert ("Weapon unavailable, pick again!");
@@ -47,11 +47,11 @@ function game() {
         console.log(computerChoice)
         playRound(userChoice, computerChoice);//play a round    
     }
-    if (userScore===5) {
+    /*if (userScore===5) {
         alert ("User wins!") //display message for the winner
     }
     else if (computerScore===5) {
         alert ("Computer wins!")
-    } 
+    } */
 }
 console.log(game()) //run the game
