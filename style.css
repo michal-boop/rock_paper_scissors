@@ -7,12 +7,13 @@ body {
 
 h1 {
     font-size: 60px;
-    text-shadow: 2px 2px whitesmoke;
+    font-weight: 900;
+    text-shadow: 8px 4px whitesmoke;
     text-align: center;
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 2px 2px grey;
     text-align: center;
 }
@@ -20,13 +21,13 @@ h4 {
 #heading_back, #table{
     background-color: rgba(241, 220, 188, 0.5);
     display: inline-block;
-    
+    padding: 10px;
 }
 
 #container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 button {
@@ -62,7 +63,7 @@ table {
 
 th, td {
     padding: 10px;
-    width: 120px;
+    width: 50%;
 }
 
 #message {

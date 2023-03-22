@@ -76,6 +76,7 @@ btnScissors.addEventListener('click', () => {
 function checkWin (userScore, computerScore) {
     if (userScore===5) {
         setTimeout(() => {document.getElementById("message").innerHTML="User wins!";}, "1000"); //display message for the winner
+        showImage();
         setTimeout(() => {location.reload();}, "2000");
     }
     else if (computerScore===5) {
@@ -83,6 +84,21 @@ function checkWin (userScore, computerScore) {
         setTimeout(() => {location.reload();}, "2000");
     } 
 }
+
+function showImage () {
+    let img = document.createElement("img");
+    img.src = "trophy.png";
+    img.alt = "Trophy Cup";
+    img.style.zIndex = "1";
+    img.style.position = "fixed";
+    img.style.top = "15%";
+    img.style.left = "15%";
+    img.style.filter = "drop-shadow(0 0 100px white)";
+    img.style.transition = "all 2s ease-in"
+
+    document.body.appendChild(img);
+}
+
 /*
 function game() {
     while (userScore<5 && computerScore<5) { //create a loop which will keep playing the game until user or computer scores 5 points
