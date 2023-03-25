@@ -68,7 +68,7 @@ function showImage () { //function responsible for showing a trophy in front of 
     img.alt = "Trophy Cup";
     img.style.maxHeight = "80%";
     img.style.zIndex = "1";
-    img.style.position = "fixed";
+    img.style.position = "absolute";
     img.style.top = "50%";
     img.style.marginTop = "-408px";
     img.style.left = "50%";
